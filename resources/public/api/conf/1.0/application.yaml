@@ -897,15 +897,15 @@ components:
           countryOfOrigin: GB
           category: 2
           assessments:
-            assessmentId: a06846e9a5f61fa4ecf2c4e3b23631fc
-            primaryCategory: 1
-            condition:
-              type: certificate
-              conditionId: Y923
-              conditionDescription: >-
-                Products not considered as waste according to Regulation (EC) No
-                1013/2006 as retained in UK law
-              conditionTraderText: Excluded product
+            - assessmentId: a06846e9a5f61fa4ecf2c4e3b23631fc
+              primaryCategory: 1
+              condition:
+                type: certificate
+                conditionId: Y923
+                conditionDescription: >-
+                  Products not considered as waste according to Regulation (EC) No
+                  1013/2006 as retained in UK law
+                conditionTraderText: Excluded product
           supplementaryUnit: 13
           measurementUnit: Kilograms
           comcodeEffectiveFromDate: 2023-01-01T00:00:00Z
@@ -914,7 +914,7 @@ components:
           active: true
           toReview: false
           reviewReason: Commodity code changed
-          declarable: IMMI declarable
+          declarable: IMMI Ready
           ukimsNumber: XIUKIM47699357400020231115081800
           nirmsNumber: RMS-GB-123456
           niphlNumber: S12345
@@ -931,15 +931,15 @@ components:
           countryOfOrigin: GB
           category: 2
           assessments:
-            assessmentId: a06846e9a5f61fa4ecf2c4e3b23631fc
-            primaryCategory: 1
-            condition:
-              type: certificate
-              conditionId: Y923
-              conditionDescription: >-
-                Products not considered as waste according to Regulation (EC) No
-                1013/2006 as retained in UK law
-              conditionTraderText: Excluded product
+            - assessmentId: a06846e9a5f61fa4ecf2c4e3b23631fc
+              primaryCategory: 1
+              condition:
+                type: certificate
+                conditionId: Y923
+                conditionDescription: >-
+                  Products not considered as waste according to Regulation (EC) No
+                  1013/2006 as retained in UK law
+                conditionTraderText: Excluded product
           supplementaryUnit: 13
           measurementUnit: Kilograms
           comcodeEffectiveFromDate: 2023-01-01T00:00:00Z
@@ -948,7 +948,7 @@ components:
           active: true
           toReview: true
           reviewReason: Commodity code changed
-          declarable: IMMI declarable
+          declarable: IMMI Ready
           ukimsNumber: XIUKIM47699357400020231115081801
           nirmsNumber: RMS-GB-123457
           niphlNumber: S12346
