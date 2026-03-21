@@ -65,7 +65,7 @@ paths:
         '500':
           $ref: '#/components/responses/InternalServerError'
       security:
-        - userRestricted:
+        - User-Restricted:
             - trader-goods-profiles
     get:
       tags:
@@ -100,7 +100,7 @@ paths:
         '500':
           $ref: '#/components/responses/InternalServerError'
       security:
-        - userRestricted:
+        - User-Restricted:
             - trader-goods-profiles
   /customs/traders/goods-profiles/{eori}/records/{recordId}:
     patch:
@@ -176,7 +176,7 @@ paths:
         '500':
           $ref: '#/components/responses/InternalServerError'
       security:
-        - userRestricted:
+        - User-Restricted:
             - trader-goods-profiles
     put:
           tags:
@@ -251,7 +251,7 @@ paths:
             '500':
               $ref: '#/components/responses/InternalServerError'
           security:
-            - userRestricted:
+            - User-Restricted:
                 - trader-goods-profiles
     delete:
       tags:
@@ -309,7 +309,7 @@ paths:
         '500':
           $ref: '#/components/responses/InternalServerError'
       security:
-        - userRestricted:
+        - User-Restricted:
             - trader-goods-profiles
     get:
       tags:
@@ -340,7 +340,7 @@ paths:
         '500':
           $ref: '#/components/responses/InternalServerError'
       security:
-        - userRestricted:
+        - User-Restricted:
             - trader-goods-profiles
 
   /customs/traders/goods-profiles/{eori}/records/{recordId}/advice:
@@ -417,7 +417,7 @@ paths:
         '500':
           $ref: '#/components/responses/InternalServerError'
       security:
-        - userRestricted:
+        - User-Restricted:
             - trader-goods-profiles
 
 
@@ -472,7 +472,7 @@ paths:
         '500':
           $ref: '#/components/responses/InternalServerError'
       security:
-        - userRestricted:
+        - User-Restricted:
             - trader-goods-profiles
     
   /customs/traders/goods-profiles/{eori}:
@@ -534,7 +534,7 @@ paths:
         '500':
           $ref: '#/components/responses/InternalServerError'
       security:
-        - userRestricted:
+        - User-Restricted:
             - trader-goods-profiles
 components:
   responses:
@@ -1400,7 +1400,7 @@ components:
               the wrong format
             errorNumber: 12
   securitySchemes:
-    userRestricted:
+    User-Restricted:
       type: oauth2
       description: >-
         HMRC supports OAuth 2.0 for authenticating user restricted API requests
@@ -1414,7 +1414,7 @@ components:
           refreshUrl: https://api.service.hmrc.gov.uk/oauth/refresh
           scopes:
             trader-goods-profiles: Access all aspects of TGP API
-    applicationRestricted:
+    Application-Restricted:
       type: oauth2
       description: >-
         HMRC supports OAuth 2.0 for authenticating application restricted API
