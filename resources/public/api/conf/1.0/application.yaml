@@ -1303,8 +1303,8 @@ components:
     
     withdrawReason:
           type: string
-          minimum: 1
-          maximum: 512
+          minLength: 1
+          maxLength: 512
           description: A free format field for traders to explain why they're withdrawing their request for advice.
     
   parameters:
