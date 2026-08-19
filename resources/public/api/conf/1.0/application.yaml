@@ -961,8 +961,6 @@ components:
         - totalRecords
         - currentPage
         - totalPages
-        - nextPage
-        - prevPage
       properties:
         totalRecords:
           type: integer
