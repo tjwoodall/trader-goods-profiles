@@ -1011,6 +1011,7 @@ paths:
                 - code
                 - correlationId
                 - message
+                - errors
                 type: object
                 properties:
                   correlationId:
@@ -1986,6 +1987,7 @@ paths:
                 - code
                 - correlationId
                 - message
+                - errors
                 type: object
                 properties:
                   correlationId:
@@ -2163,6 +2165,7 @@ paths:
                 - code
                 - correlationId
                 - message
+                - errors
                 type: object
                 properties:
                   correlationId:
@@ -2742,6 +2745,7 @@ paths:
                 - code
                 - correlationId
                 - message
+                - errors
                 type: object
                 properties:
                   correlationId:
@@ -2928,6 +2932,7 @@ paths:
                 - code
                 - correlationId
                 - message
+                - errors
                 type: object
                 properties:
                   correlationId:
@@ -3121,6 +3126,7 @@ paths:
                 - code
                 - correlationId
                 - message
+                - errors
                 type: object
                 properties:
                   correlationId:
@@ -3199,6 +3205,7 @@ paths:
                 - code
                 - correlationId
                 - message
+                - errors
                 type: object
                 properties:
                   correlationId:
@@ -3411,6 +3418,7 @@ paths:
                 - code
                 - correlationId
                 - message
+                - errors
                 type: object
                 properties:
                   correlationId:
@@ -3527,6 +3535,7 @@ components:
       - code
       - correlationId
       - message
+      - errors
       type: object
       properties:
         correlationId:
@@ -3991,7 +4000,7 @@ components:
       type: object
       properties:
         actorId:
-          $ref: '#/components/schemas/actorId'
+          $ref: "#/components/schemas/actorId"
     CreateTGPRecordAdviceSchema:
       required:
       - actorId
@@ -5869,7 +5878,7 @@ components:
       style: form
       explode: true
       schema:
-        $ref: '#/components/schemas/withdrawReason'
+        $ref: "#/components/schemas/withdrawReason"
   examples:
     StandardBadRequestExample:
       value:
